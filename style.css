@@ -7,15 +7,15 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+   --cor-de-fundo: #333;
+   /* --cor-de-fundo: #F5F5F5; */
 }
 
 body {
     box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
+    background-color: var(--cor-de-fundo);
+    color: #ccc;
     font-family: 'Raleway';
-    margin: 0;
     padding: 0;
     line-height: 1;
 }
@@ -25,6 +25,14 @@ ol, ul,li {
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+.menu__title {
+    font-family: "Great Vibes", cursive;
+    margin: 0 6px;
+    font-weight: 400;
+    font-size: 26px;
+    font-style: normal;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -39,52 +47,178 @@ con una interfaz de usuario compleja, y permite la reutilización del código ex
 Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+
+section{
+    padding: 0 80px;
+    margin: 80px 0;
+}
+
 /*Sección Menu*/
-
 section.menu{
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
 
+section.menu nav{
+    align-items: center;
+    gap: 20px;
+}
+
+.menu__list__item {
+    padding: 3px 6px 3px 6px;
+    border-radius: 2px;
+}
+
+.menu__list__item:hover {
+    text-decoration: underline;
+}
+
+.menu__list {
+    gap: 14px;
+}
+
+.menu__list__item__contato {
+    font-weight: bold;
+    background-color: #ccc;
+    color: #333;
+    box-shadow: 4px 4px #303030;
+    padding: 3px 6px;
+    border-radius: 2px;
+}
+
+.menu__list__item__contato:hover {
+    background: #ddd;
+}
+
+img {
+    object-fit: contain;
+}
+
+.d-flex {
+    display: flex;
 }
 
 /*Sección Title*/
 
-section.title{
-
+.title__div{
+    justify-content: space-between;
+    align-items: center;
 }
+
+.title__container{
+    width: 60%;
+}
+
+.title__subsection{
+    font-weight: normal;
+}
+
+.title__bio{
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.title__network{
+    justify-content: left;
+    gap: 20px;
+}
+
+.title__profile{
+    width: 25%;
+}
+
 
 /*Sección About*/
 
 section.about{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
 
+/*Sección Skills*/
+
+.skills__line{
+    justify-content: space-between;
 }
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+.hobbies__line{
+    justify-content: space-between;
 }
 
 /* Experiencia Académica*/
 
-section.academic{
-
+.academic__courses{
+    justify-content: space-between;
 }
 
 /* experiencia*/
 
 section.experience{
+}
 
+.experiencie__box{
+    margin: 10px 20px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 24px;
+    box-shadow: 3px 3px 5px #ccc;
 }
 
 /*Contacto*/
 
-section.formcontato{
+.formcontato__contacto{
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
 
+.formcontato__img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.formcontato__form{
+    gap: 10px;
+}
+
+.formcontato__input{
+    display: block;
+    width: 200px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: #bbb 1px solid;
+    border-radius: 2px;
+    outline: none;
+    padding: 3px 6px;
+}
+
+.formcontato__textarea{
+    display: block;
+    width: 400px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: #bbb 1px solid;
+    border-radius: 2px;
+    outline: none;
+    padding: 3px 6px;
+}
+
+.formcontato__botao{
+    background-color: #444;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 /*footeer*/
 
 section.footer{
-   
+   text-align: center;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
