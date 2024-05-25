@@ -18,7 +18,6 @@
     <div class="tudo">
     <section class="menu d-flex">
         <header class="menu__header d-flex">
-            <img src="assets\vector.png">
             <h3 class="menu__title">Daneska Liz</h3>
         </header>
         <nav class="d-flex">
@@ -41,78 +40,52 @@
                 <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="title__network d-flex">
                      <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="">Currículo <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item">
+                        <a class="d-flex" href="https://github.com/daneskaliz" target="_blank">
+                            <img class="icon" src="./assets/github.svg" alt="GitHub">
+                            GitHub
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <img class="title__profile" src="assets\profile.png">
+            <img class="title__profile" src="assets\avatar.jpg">
             </div>
     </section>
     
     <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
         <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
+            <h2 class="about__title">Sobre mi</h2>
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
             <p class="about__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
             <!-- Si quieres, pon tú firma acá! -->
-            <img src="assets\signature.png">
         </div>
     </section>
 
     <!-- Sección de Skills -->
     <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
-            <div class="skills__line d-flex">
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
-                        <li class="skills__name"> HTML 5</li>
-                    </ul>
-                </div>
+        <h2 class="skills__title">Skills</h2>
+            <ul class="skills__line d-flex">
+                <li class="skills__box">
+                    <img class="skills__img" src="assets\html.svg">
+                    <p class="skills__name">HTML</p>
+                </li>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
-                        <li class="skills__name">Javascript</li>
-                    </ul>
-                </div>
+                <li class="skills__box">
+                    <img class="skills__img" src="assets\css.svg" alt="">
+                    <p class="skills__name">CSS</p>
+                </li>
 
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\php_icon.png" alt=""></li>
-                        <li class="skills__name">PHP</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
-                        <li class="skills__name">Node JS</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
-                        <li class="skills__name">React</li>
-                    </ul>
-                </div>
-
-                <div class="skills__box">
-                    <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-                        <li class="skills__name">CSS</li>
-                    </ul>
-                </div>
-        </div>
+                <li class="skills__box">
+                    <img class="skills__img" src="assets\javascript.svg" alt="">
+                    <p class="skills__name">JavaScript</p>
+                </li>
+            </ul>
     </section>
 
     <!-- Sección de Hobbies -->
     <section class="hobbies" id="hobbies">
-        <h3 class="hobbies__title">Hobbies</h3>
+        <h2 class="hobbies__title">Hobbies</h2>
             <div class="hobbies__line d-flex">
                 <div class="hobbies__box">
                     <ul>
@@ -121,12 +94,12 @@
                     </ul>
                 </div>
 
-                <div class="hobbies__box">
-                    <ul>
-                        <li class="hobbies__img"> <img src="assets\guitar_icon.png" alt=""></li>
-                        <li class="hobbies__name">Tocar bajo</li>
-                    </ul>
-                </div>
+                <ul class="hobbies__box">
+                        <li class="hobbies__img">
+                            <img src="assets\guitar_icon.png" alt="">
+                            <p class="hobbies__name">Tocar bajo</p>
+                        </li>
+                </ul>
 
                 <div class="hobbies__box">
                     <ul>
@@ -191,7 +164,7 @@
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
-        <h2 class="experience__section__title" >Experiencia Profissional</h2>
+        <h2 class="experience__title" >Experiencia Profissional</h2>
         <div class="experiencie__box">
             <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
             <img class="experience__img" src="assets\decod_print.png">

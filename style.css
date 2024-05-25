@@ -7,14 +7,13 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #333;
-   /* --cor-de-fundo: #F5F5F5; */
+   --cor-de-fundo: #F5F5F5;
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
-    color: #ccc;
+    color: #555;
     font-family: 'Raleway';
     padding: 0;
     line-height: 1;
@@ -33,9 +32,14 @@ a{
     font-weight: 400;
     font-size: 26px;
     font-style: normal;
+    transition: color .5s;
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+.menu__title:hover {
+    color: black;
+}
+
+    /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
 
 Lo que es el BEM?
 
@@ -68,10 +72,14 @@ section.menu nav{
 .menu__list__item {
     padding: 3px 6px 3px 6px;
     border-radius: 2px;
+    transition: background-color .5s;
 }
 
 .menu__list__item:hover {
-    text-decoration: underline;
+    /* text-decoration: underline white; */
+    color: white;
+    background-color: #ffbfbf;
+    color: #966;
 }
 
 .menu__list {
@@ -80,22 +88,19 @@ section.menu nav{
 
 .menu__list__item__contato {
     font-weight: bold;
-    background-color: #ccc;
-    color: #333;
-    box-shadow: 4px 4px #303030;
+    background-color: #ffbfbf;
+    color: #966;
     padding: 3px 6px;
     border-radius: 2px;
+    transition: box-shadow .5s;
 }
 
 .menu__list__item__contato:hover {
-    background: #ddd;
+    box-shadow: 4px 4px;
+    /* scale: 1.1; */
 }
 
-img {
-    object-fit: contain;
-}
-
-.d-flex {
+    .d-flex {
     display: flex;
 }
 
@@ -106,12 +111,12 @@ img {
     align-items: center;
 }
 
-.title__container{
-    width: 60%;
-}
-
 .title__subsection{
     font-weight: normal;
+}
+
+.title__container{
+    width: 60%;
 }
 
 .title__bio{
@@ -119,15 +124,31 @@ img {
     font-size: 40px;
 }
 
-.title__network{
-    justify-content: left;
-    gap: 20px;
+.title__network {
+    padding: 0;
+}
+
+.title__network a{
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #ddd;
+    padding: 3px 6px;
+    border-radius: 2px;
+    gap: 4px;
+    align-items: center;
+}
+
+.title__network a:hover{
+    text-decoration: underline;
+}
+
+.title__network a img{
+    width: 20px;
 }
 
 .title__profile{
-    width: 25%;
+    width: 250px;
+    border-radius: 50%;
 }
-
 
 /*Sección About*/
 
@@ -136,19 +157,48 @@ section.about{
     margin-bottom: 80px;
 }
 
+section.about .about__title{
+    text-align: center;
+    margin: 20px 0;
+}
+
 /*Sección Skills*/
+
+.skills__title{
+    text-align: center;
+}
 
 .skills__line{
     justify-content: space-between;
 }
 
+.skills__box img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+}
+
+.skills__name{
+    text-align: center;
+    font-weight: bold;
+}
+
 /*Sección Hobbies*/
+
+.hobbies__title{
+    text-align: center;
+}
 
 .hobbies__line{
     justify-content: space-between;
 }
 
 /* Experiencia Académica*/
+
+.academic__title{
+    text-align: center;
+}
 
 .academic__courses{
     justify-content: space-between;
@@ -157,6 +207,10 @@ section.about{
 /* experiencia*/
 
 section.experience{
+}
+
+.experience__title{
+    text-align: center;
 }
 
 .experiencie__box{
