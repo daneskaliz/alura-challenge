@@ -26,12 +26,15 @@ a{
     color: var(--cor-de-link);
 }
 
+h2{
+    margin: 40px 0;
+}
+
 .menu__title {
     font-family: "Great Vibes", cursive;
     margin: 0 6px;
     font-weight: 400;
     font-size: 26px;
-    font-style: normal;
     transition: color .5s;
 }
 
@@ -62,6 +65,7 @@ section.menu{
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    display: flex;
 }
 
 section.menu nav{
@@ -83,10 +87,10 @@ section.menu nav{
 }
 
 .menu__list {
-    gap: 14px;
+    gap: 10px;
 }
 
-.menu__list__item__contato {
+.menu__list__item__contato{
     font-weight: bold;
     background-color: #ffbfbf;
     color: #966;
@@ -97,16 +101,16 @@ section.menu nav{
 
 .menu__list__item__contato:hover {
     box-shadow: 4px 4px;
-    /* scale: 1.1; */
 }
 
-    .d-flex {
+.d-flex {
     display: flex;
 }
 
 /*Sección Title*/
 
 .title__div{
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -152,11 +156,6 @@ section.menu nav{
 
 /*Sección About*/
 
-section.about{
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
 section.about .about__title{
     text-align: center;
     margin: 20px 0;
@@ -170,6 +169,11 @@ section.about .about__title{
 
 .skills__line{
     justify-content: space-between;
+    padding: 0;
+}
+
+.skills__box {
+    width: 120px;
 }
 
 .skills__box img{
@@ -191,7 +195,25 @@ section.about .about__title{
 }
 
 .hobbies__line{
+    padding: 0;
+    display: flex;
     justify-content: space-between;
+}
+
+.hobbies__box {
+    width: 120px;
+}
+
+.hobbies__box img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+}
+
+.hobbies__name{
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Experiencia Académica*/
@@ -223,36 +245,16 @@ section.about .about__title{
     border-radius: 4px;
 }
 
-/* experiencia*/
-
-section.experience{
-}
-
-.experience__title{
-    text-align: center;
-}
-
-.experiencie__box{
-    margin: 10px 20px;
-    background-color: white;
-    border-radius: 4px;
-    padding: 24px;
-    box-shadow: 3px 3px 5px #ccc;
-}
-
 /*Contacto*/
+
+section.formcontato{
+    margin: 100px 0;
+}
 
 .formcontato__contacto{
     justify-content: space-between;
     gap: 50px;
     align-items: center;
-}
-
-.formcontato__img{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 .formcontato__form{
@@ -299,11 +301,61 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /*Tablet*/
-@media (min-width: 768px) {
+@media screen and (max-width: 1023px) {
+h2{
+    margin: 10px 0;
+}
+    
+section{
+    padding: 4px;
+    margin: 20px 0;
+}
 
 /* Menú */
 
+section.menu{
+    display: inline-block;
+}
+
+.menu__title {
+    display: block;
+    font-size: 22px;
+}
+
+.menu__list {
+    gap: 10px;
+}
+
+.menu__list__item {
+    font-size: 14px;
+    padding: 3px 6px 3px 6px;
+    border-radius: 2px;
+    transition: background-color .5s;
+}
+
 /*title*/
+.title__div{
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.title__bio{
+    text-align: center;
+}
+
+.title__container{
+    width: fit-content;
+}
+
+.title__profile{
+    display: block;
+}
+
+.title__network{
+    justify-content: center;
+}
 
 /*Skills*/
 
@@ -316,9 +368,12 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media screen and (max-width: 767px) {
 
 /*Menu*/
+.menu__title {
+    font-size: 16px;
+}
 
 /*Titulo*/
 
@@ -327,12 +382,24 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Skills*/
 
 /*Hobbies*/
- 
+
 /*Formación Académica*/
+
+.academic__courses__list{
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
 
 /*Experiencia Profesional*/
 
  /*Contacto*/
+
+ section.formcontato{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 
 /*Footer*/
 
