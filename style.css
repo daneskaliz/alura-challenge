@@ -10,6 +10,10 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F5F5F5;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
@@ -35,7 +39,7 @@ h2{
     font-family: "Great Vibes", cursive;
     margin: 0 6px;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 32px;
     transition: color .5s;
 }
 
@@ -77,36 +81,28 @@ section.menu nav{
 .menu__list {
     gap: 10px;
     display: flex;
+    align-items: center;
 }
 
 .menu__list__item {
-    padding: 3px 6px 3px 6px;
+    padding: 3px 6px;
     border-radius: 2px;
     transition: background-color .5s;
 }
 
 .menu__list__item:hover {
-    /* text-decoration: underline white; */
-    color: white;
     background-color: #ffbfbf;
     color: #966;
 }
 
 .menu__list__item__contato{
     font-weight: bold;
-    background-color: #ffbfbf;
+    background-color: #ffcfcf;
     color: #966;
     padding: 3px 6px;
     border-radius: 2px;
     transition: box-shadow .5s;
-}
-
-.menu__list__item__contato:hover {
     box-shadow: 4px 4px;
-}
-
-.d-flex {
-    display: flex;
 }
 
 /*Sección Title*/
@@ -130,17 +126,15 @@ section.menu nav{
     font-size: 40px;
 }
 
-.title__network {
-    padding: 0;
-}
-
 .title__network a{
     background-color: #fff;
     box-shadow: 2px 2px 2px #ddd;
     padding: 3px 6px;
-    border-radius: 2px;
+    border-radius: 4px;
     gap: 4px;
+    display: flex;
     align-items: center;
+    width: 80px;
 }
 
 .title__network a:hover{
@@ -170,6 +164,7 @@ section.about .about__title{
 }
 
 .skills__line{
+    display: flex;
     justify-content: space-between;
     padding: 0;
 }
@@ -250,7 +245,7 @@ section.about .about__title{
 /*Contacto*/
 
 section.formcontato{
-    margin: 100px 0;
+    margin-top: 120px;
 }
 
 .formcontato__contacto{
@@ -321,7 +316,6 @@ section.menu{
 
 .menu__title {
     display: block;
-    font-size: 22px;
 }
 
 .menu__list {
@@ -385,7 +379,6 @@ section.formcontato{
     padding: 0 20px;
     display: flex;
     justify-content: center;
-    margin-top: 120px;
 }
 
 /*Mobile*/
@@ -399,7 +392,6 @@ section.menu{
 
 .menu__title {
     display: block;
-    font-size: 20px;
 }
 
 .menu__list {
@@ -431,7 +423,7 @@ section.title{
 
  /*Contacto*/
 
- section.formcontato{
+section.formcontato{
     text-align: center;
     display: flex;
     justify-content: center;
